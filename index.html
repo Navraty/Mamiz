@@ -5,45 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwindcss.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Mamiz</title>
 </head>
 <body>
-    <header class="">
-       <nav class=" flex justify-between px-3 py-8">
-        
-            <ul class="text-sm font-bold  flex justify-between gap-16 items-center">
-                <div><img src="img/Rectangle 467 (1).png" alt="" class=""></div>
-                <li><a href=""></a>Feactures</li>
-                <li><a href=""></a>Princing</li>
-                <li><a href=""></a>Careers</li>
-                <li><a href=""></a>Help</li>
-            </ul>
-            <div class="flex gap-3 ">
-                <button class="bg-black px-4 py-1 flex justify-between rounded-lg">
-                     <img src="img/game.png" alt="" class="w-[20px] py-2">
-                    <div class="flex flex-col">
-                        <span class="text-white text-sm">Get in On</span>
-                        <span class="text-white text-sm font-bold">GooglePlay</span>
-                    </div>
-                </button>
+    <header class="flex justify-between items-center px-2 py-4
+                    lg:flex lg:justify-between lg:items-center lg:py-4 lg:px-6
+                    md:flex md:justify-between md:items-center md:py-4 md:px-6
+                    ">
 
-                <button class="bg-black px-4 py-1 flex justify-between rounded-lg">
-                    <img src="img/logo-apple.png" alt="" class="w-[20px] py-2">
-                    <div class="flex flex-col">
-                        <span class="text-white text-sm">Get in On</span>
-                        <span class="text-white text-sm font-bold">App Store</span>
-                    </div>
-               </button>
-             </div>
-        </nav>
+        <div class="flex items-center gap-10">
+            <a href=""><img src="img/Rectangle 467 (1).png" alt="" class=""></a>
+
+            <!-- la nav-bar -->
+            <nav class="md:hidden lg:block hidden">
+                <ul class="text-sm font-bold  flex justify-between gap-16 items-center">
+                    <li><a href="">Feactures</a></li>
+                    <li><a href="">Princing</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- les boutons à droite -->
+        <div class="md:flex md:gap-3 md:block lg:block lg:flex lg:gap-3 hidden ">
+            <button class="bg-black px-4 py-1 flex justify-between rounded-lg">
+                <img src="img/game.png" alt="" class="w-[20px] py-2">
+                <div class="flex flex-col">
+                    <span class="text-white text-sm">Get in On</span>
+                    <span class="text-white text-sm font-bold">GooglePlay</span>
+                </div>
+            </button>
+
+            <button class="bg-black px-4 py-1 flex justify-between rounded-lg">
+                <img src="img/logo-apple.png" alt="" class="w-[20px] py-2">
+                <div class="flex flex-col">
+                    <span class="text-white text-sm">Get in On</span>
+                    <span class="text-white text-sm font-bold">App Store</span>
+                </div>
+            </button>
+        </div>
+       <a href="" class="lg:hidden md:block block"><img src="img/menu.png" alt="" class="w-[35px] "></a>
     </header>
+        <!-- la grande section -->
+
     <main>
-        <div class="flex justify-between py-2">
-            <div class="flex flex-col px-12 py-44">
+        <div class="flex flex-col px-2 
+                    lg:flex-row lg:justify-between lg:py-2
+                    md:flex md:flex-col md:justify-between md:py-2">
+
+            <div class="flex flex-col px-2 py-6">
                 <h1 class="font-bold text-3xl ">The easiest way to <br> manage projects</h1>
                 <P class="py-5">From the small stuff to the big picture, organizes the work so teams know <br>what to do why it matters, and how to get it done.</P>
                 <div class="flex gap-5">
-                    <button class="bg-rose-700 px-3 py-2 rounded-lg text-white text-sm">Get Started</button>
+                    <button class="bg-[#f51818] px-3 py-2 rounded-lg text-white text-sm">Get Started</button>
                     <button class=" text-rose-600">
                         <img src="" alt="">
                         Whatch Video
@@ -51,23 +67,276 @@
                 </div>
             </div>
 
-            <div class="px-20" >
-                
+            <div class="lg:px-20 md:px-[25%]" >
                 <img src="img/Mobile.png" alt="w-[40%]">
             </div>
         </div> 
-        
-        <section>
-            <div class="flex gap-16">
-                <img src="img/logo-apple.png" alt=""  class="w-[70px]">
-                <img src="img/_Client logo (1).png" alt="" class="w-[70px]">
-                <img src="img/_Client logo (2).png" alt="" class="w-[70px]">
-                <img src="img/_Client logo (4).png" alt="" class="w-[70px]">
-                <img src="img/_Client logo (5).png" alt="" class="w-[70px]">
-                <img src="img/_Client logo (6).png" alt="" class="w-[70px]">
+        <!-- section des partenaires -->
+
+        <section class="flex gap-16 justify-around flex-col flex-col py-4 px-12 
+                        lg:flex-row lg:gap-16 lg:justify-between lg:border lg:border-gray-200 lg:py-4 lg:px-12 
+                        md:flex md:gap-16 md:justify-between md:border md:border-gray-200 md:py-4 md:px-12 md:items-center ">
+            <img src="img/_Client logo.png" alt="">
+            <img src="img/_Client logo (1).png" alt="">
+            <img src="img/_Client logo (2).png" alt="">
+            <img src="img/_Client logo (3).png" alt="">
+            <img src="img/_Client logo (4).png" alt="">
+            <img src="img/_Client logo (5).png" alt="">
+           
+        </section>
+
+        <!-- bloc tailor -->
+
+        <section class="flex flex-col px-5 py-20 items-center">
+           <p class="text font-bold text-3xl">Tailor-made features</p>
+           <p class="text-sm ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur voluptatibus ratione optio animi</p>
+           <p class="px-10"> Exercitationem, quasi voluptatibus et quam</p>
+        </section>
+
+        <!-- bloc ds deux dives -->
+
+        <section class="flex flex-col px-8 py-8 gap-8 ">
+            <div class="flex justify-between">
+                <div class="flex flex-col items-center gap-2">
+                    <img src="img/Base feature icon.png" alt="">
+                    <span class="text font-bold">Robust worflow</span>
+                    <p class=" text-gray-600">Lorem ipsum dolor sit amet consectetur <br> adipisicing elitex necessitatibus</p>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <img src="img/Base feature icon (1).png" alt="">
+                    <span class="text font-bold">Flexibility</span>
+                    <p class="px-5 text-gray-600 ">Lorem ipsum dolor sit amet consectetur <br> adipisicing eli eos commodi</p>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <img src="img/Base feature icon (2).png" alt="">
+                    <span class="text font-bold">User friendly</span>
+                    <p class="text-gray-600">Lorem ipsum do adipisicing In similique itaque <br> ad accusantium eum dolore aliquam</p>
+                </div>
 
             </div>
+
+
+            <div class="flex py-8 justify-between">
+                <div class="flex flex-col items-center gap-2">
+                    <img src="img/Base feature icon (3).png" alt="">
+                    <span class="text font-bold">Multiple layouts</span>
+                    <p class="text-gray-600">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem</p>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <img src="img/Base feature icon (4).png" alt="">
+                    <span class="text font-bold">Better components</span>
+                    <p class="text-gray-600">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem</p>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <img src="img/Base feature icon (5).png" alt="">
+                    <span class="text font-bold">Well organised</span>
+                    <p class="text-gray-600">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem </p>
+                </div>
+            </div>
         </section>
+
+        <section class="bg-blue-300 py-5 gap-5">
+            <div>
+                <p class="font-bold text-4xl px-[10%] py-2">Real Stories from Real <br> Customers</p>
+                <span class="px-[10%]">Get inspired by these stories.</span>
+            </div>
+            
+            <div class="ml-[22%]">
+                <div class=" flex flex-col px-6 py-5 bg-white w-[20%] h-34 justify-between"> 
+                    <img src="img/_Client logo (1).png" alt="" class="w-[100px] py-2">
+                    <p class="py-4">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. <br> Reprehenderit </p>
+                    
+                    <p class="font-bold">Floyd Miles</p>
+                    <p class="text-gray-600">Vice president, GoPro</p>
+                </div>
+            </div>
+            
+            <!-- <div class="flex justify-between py-5  ">
+                <div class="flex flex-col">
+                    <div class="flex flex-col px-6 py-5 bg-white w-[45%] h-34"> 
+                        <img src="img/_Client logo (1).png" alt="" class="w-[100px] py-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. <br> Reprehenderit </p>
+                        
+                        <p class="font-bold">Floyd Miles</p>
+                        <p class="text-gray-600">Vice president, GoPro</p>
+                    </div>
+                </div>
+
+               <div class=" flex">
+                    <div class="flex flex-col px-6 py-5 bg-white w-[30%] "> 
+                        <img src="img/_Client logo (1).png" alt="" class="w-[100px] py-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. <br> Reprehenderit </p>
+                        
+                        <p class="font-bold">Floyd Miles</p>
+                        <p class="text-gray-600">Vice president, GoPro</p>
+                    </div>
+               </div>
+           </div> -->
+            
+        </section>
+        <!-- bloc archives -->
+
+        <div class="px-24 flex justify-between py-10">
+            <div class="flex flex-col py-5">
+                <span class="font-bold text-4xl">Our 18 years of <br> archivements</span>
+                <p>whith our super powers we have reached this </p>
+            </div>
+
+            <div class="flex flex-col py-5">
+
+                <div class="flex justify-between items-center gap-2">
+                    <img src="img/Base feature icon.png" alt="" class="w-[24px]">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-3xl">10,000</span>
+                        <span class="text-sm">Downloads per day</span>
+                    </div>
+                
+              
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-center gap-2">
+                            <img src="img/Base feature icon (3).png" alt="" class="w-[24px]">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-3xl">2 Milion</span>
+                                <span class="">Users</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="flex-col flex">
+                    <div class="flex gap-24">
+                        <div class="flex justify-between items-center gap-2">
+                            <img src="img/Base feature icon (4).png" alt="" class="w-[24px]">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-3xl">500+</span>
+                                <span>Clients</span>
+                            </div>
+                        </div>
+                                
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-center gap-2">
+                                <img src="img/Base feature icon (5).png" alt="" class="w-[24px]">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-3xl">140</span>
+                                    <span>contries</span>
+                                 </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <!--bloc integrations -->
+
+        <div class="flex justify-between px-24 py-24">
+            <div class="flex flex-col">
+                <span class="font-bold text-4xl py-3">Easy integrations <br> with 170+ tools</span>
+                <p>connect Landify whit your favourite tools that you that you use <br> daily and keep things on track. </p>
+            </div>
+
+            <div class="bordure bg-gray-400 flex flex-col items-center">
+                <div class="flex">
+                    <img src="img/_Client logo mark (2).png" alt="">
+                    <img src="img/_Client logo mark (1).png" alt="" >
+                    <img src="img/_Client logo mark (3).png" alt="" >
+                    <img src="img/_Client logo mark (4).png" alt="" >
+                </div>
+
+                <div class="flex">
+                    <img src="img/_Client logo mark (5).png" alt="">
+                    <img src="img/_Client logo mark (6).png" alt="">
+                    <img src="img/_Client logo mark (6).png" alt="" >
+                </div>
+
+            </div>
+            
+        </div>
+        <!--le bloc avant le footer -->
+        
+        <div class="flex justify-between px-24 py-24 relative bg-[#3dcde0]">
+            <div class="flex flex-col">
+                <span class="font-bold text-4xl py-3">Manage all projects from <br> your mobile</span>
+                <p>Download the app to manage your projects, keep track of the <br> progress and complete tasks without procastinating. Stay on track <br>and complete on time!</p>
+
+                <div class="flex gap-3  py-10 flex-col ">
+                    <span>Get the App</span>
+                    <div class="flex gap-3">
+                        <button class="bg-black px-4 py-1 flex justify-between rounded-lg">
+                            <img src="img/game.png" alt="" class="w-[20px] py-2">
+                            <div class="flex flex-col">
+                                <span class="text-white text-sm">Get in On</span>
+                                <span class="text-white text-sm font-bold">GooglePlay</span>
+                            </div>
+                        </button>
+            
+                        <button class="bg-black px-4 py-1 flex justify-between rounded-lg">
+                            <img src="img/logo-apple.png" alt="" class="w-[20px] py-2">
+                            <div class="flex flex-col">
+                                <span class="text-white text-sm">Get in On</span>
+                                <span class="text-white text-sm font-bold">App Store</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <img src="img/Phone Mockup 1.png" alt="" class="absolute top-0 right-[30%] ">
+            <img src="img/Phone Mockup 2.png" alt="" class="absolute bottom-0 right-[10%]">
+        </div>
     </main>
+
+    <footer class="bg-black flex justify-between px-24">
+       
+
+        <div class="flex flex-col">
+            <div class="py-5">
+                <img src="img/Rectangle 467 (1).png">
+            </div>
+
+            <div class="flex gap-5 text-white">
+                <a href="">Dowloand Now</a>
+                <a href="">License</a>
+           </div>
+            <nav class="flex py-5">
+                <ul  class="flex text-white text-sm gap-4">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Feactures</a></li>
+                    <li><a href="">Princing</a></li>
+                    <li><a href=""></a>News</li>
+                    <li><a href=""></a>Help</li>
+                    <li><a href=""></a>Contact</li>
+                </ul>
+            </nav>
+            <span class="text-white">&copy; 2021 Landify UI Kit. All rights reserved</span>
+        </div>
+
+        <div class="flex gap-3 py-10 flex-col">
+            <span class="text-white">Get the App</span>
+            <div class="flex gap-3 flex-col">
+                <button class="bg-black px-4 py-1 flex justify-between rounded-lg border border">
+                    <img src="img/game.png" alt="" class="w-[20px] py-2">
+                    <div class="flex flex-col">
+                        <span class="text-white text-sm">Get in On</span>
+                        <span class="text-white text-sm font-bold">GooglePlay</span>
+                    </div>
+                </button>
+    
+                <button class="bg-black px-4 py-1 flex justify-between rounded-lg border boerder">
+                    <img src="img/logo-apple.png" alt="" class="w-[20px] py-2">
+                    <div class="flex flex-col">
+                        <span class="text-white text-sm">Get in On</span>
+                        <span class="text-white text-sm font-bold">App Store</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
