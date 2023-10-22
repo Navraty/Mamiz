@@ -9,10 +9,10 @@
     <title>Mamiz</title>
 </head>
 <body>
-    <header class="flex justify-between items-center px-2 py-4
+    <div class="flex flex-col gap-5 bg">
+        <header class="flex justify-between items-center px-2 py-4
                     lg:flex lg:justify-between lg:items-center lg:py-4 lg:px-6
-                    md:flex md:justify-between md:items-center md:py-4 md:px-6
-                    ">
+                    md:flex md:justify-between md:items-center md:py-4 md:px-6">
 
         <div class="flex items-center gap-10">
             <a href=""><img src="img/Rectangle 467 (1).png" alt="" class=""></a>
@@ -47,148 +47,150 @@
             </button>
         </div>
        <a href="" class="lg:hidden md:block block"><img src="img/menu.png" alt="" class="w-[35px] "></a>
-    </header>
-        <!-- la grande section -->
+        </header>
 
-    <main>
+         <!-- la grande section -->
+
         <div class="flex flex-col px-2 
-                    lg:flex-row lg:justify-between lg:py-2
-                    md:flex md:flex-col md:justify-between md:py-2">
+                        lg:flex-row lg:justify-between lg:py-2
+                        md:flex md:flex-col md:justify-between md:py-2">
 
-            <div class="flex flex-col px-2 py-6">
-                <h1 class="font-bold text-3xl ">The easiest way to <br> manage projects</h1>
-                <P class="py-5">From the small stuff to the big picture, organizes the work so teams know <br>what to do why it matters, and how to get it done.</P>
-                <div class="flex gap-5">
-                    <button class="bg-[#f51818] px-3 py-2 rounded-lg text-white text-sm">Get Started</button>
-                    <button class=" text-rose-600">
-                        <img src="" alt="">
-                        Whatch Video
-                    </button>
+                <div class="flex flex-col px-2 py-6">
+                    <h1 class="font-bold text-3xl ">The easiest way to <br> manage projects</h1>
+                    <P class="py-5">From the small stuff to the big picture, organizes the work so teams know <br>what to do why it matters, and how to get it done.</P>
+                    <div class="flex gap-5">
+                        <button class="bg-[#f51818] px-3 py-2 rounded-lg text-white text-sm">Get Started</button>
+                        <button class=" text-rose-600">
+                            <img src="" alt="">
+                            Whatch Video
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="lg:px-20 md:px-[25%]" >
-                <img src="img/Mobile.png" alt="w-[40%]">
-            </div>
+                <div class="lg:px-20 md:px-[25%]" >
+                    <img src="img/Mobile.png" alt="w-[40%]">
+                </div>
         </div> 
+    </div>
+    
+    <main>
         <!-- section des partenaires -->
 
-        <section class="flex gap-16 justify-around flex-col flex-col py-4 px-12 
-                        lg:flex-row lg:gap-16 lg:justify-between lg:border lg:border-gray-200 lg:py-4 lg:px-12 
-                        md:flex md:gap-16 md:justify-between md:border md:border-gray-200 md:py-4 md:px-12 md:items-center ">
+        <section class="grid gap-6 grid-cols-2 justify-items-center
+                        lg:flex lg:flex-row lg:gap-16 lg:justify-between lg:border lg:border-gray-200 lg:py-4 lg:px-12 
+                        md:grid md:grid-cols-4 md:border md:border-gray-200 md:justify-items-center">
+            
             <img src="img/_Client logo.png" alt="">
             <img src="img/_Client logo (1).png" alt="">
             <img src="img/_Client logo (2).png" alt="">
             <img src="img/_Client logo (3).png" alt="">
-            <img src="img/_Client logo (4).png" alt="">
-            <img src="img/_Client logo (5).png" alt="">
+            <img src="img/_Client logo (4).png" alt="" class="md:col-start-2 md:col-end-3">
+            <img src="img/_Client logo (5).png" alt="" class="md:col-start-3 md:col-end-4">
            
         </section>
 
         <!-- bloc tailor -->
 
-        <section class="flex flex-col px-5 py-20 items-center">
-           <p class="text font-bold text-3xl">Tailor-made features</p>
-           <p class="text-sm ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequatur voluptatibus ratione optio animi</p>
-           <p class="px-10"> Exercitationem, quasi voluptatibus et quam</p>
+        <section class="flex flex-col gap-4 py-20 items-center
+                        lg:flex lg:flex-col lg:py-20 lg:gap-4 lg:items-center
+                        md:flex flex-col md:px-5 md:py-20 md:items-center">
+
+           <h1 class="text font-bold text-3xl text-center">Tailor-made <br class="lg:hidden md:hidden block"> features</h1>
+           <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Excepturi animi at dolorum eos culpa dolore.</p>
         </section>
 
-        <!-- bloc ds deux dives -->
+        <section class="pb-10">
 
-        <section class="flex flex-col px-8 py-8 gap-8 ">
-            <div class="flex justify-between">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-6 lg:justify-items-center
+                        md:grid md:grid-cols-2 md:gap-6 md:justify-items-center
+                        flex flex-col gap-8">
                 <div class="flex flex-col items-center gap-2">
                     <img src="img/Base feature icon.png" alt="">
                     <span class="text font-bold">Robust worflow</span>
-                    <p class=" text-gray-600">Lorem ipsum dolor sit amet consectetur <br> adipisicing elitex necessitatibus</p>
+                    <p class="text-gray-600 text-center">Lorem ipsum dolor sit amet consectetur <br> adipisicing elitex necessitatibus</p>
                 </div>
 
                 <div class="flex flex-col items-center gap-2">
                     <img src="img/Base feature icon (1).png" alt="">
                     <span class="text font-bold">Flexibility</span>
-                    <p class="px-5 text-gray-600 ">Lorem ipsum dolor sit amet consectetur <br> adipisicing eli eos commodi</p>
+                    <p class="px-5 text-gray-600  text-center">Lorem ipsum dolor sit amet consectetur <br> adipisicing eli eos commodi</p>
                 </div>
 
                 <div class="flex flex-col items-center gap-2">
                     <img src="img/Base feature icon (2).png" alt="">
                     <span class="text font-bold">User friendly</span>
-                    <p class="text-gray-600">Lorem ipsum do adipisicing In similique itaque <br> ad accusantium eum dolore aliquam</p>
+                    <p class="text-gray-600 text-center">Lorem ipsum do adipisicing In similique itaque <br> ad accusantium eum dolore aliquam</p>
                 </div>
 
-            </div>
-
-
-            <div class="flex py-8 justify-between">
                 <div class="flex flex-col items-center gap-2">
                     <img src="img/Base feature icon (3).png" alt="">
                     <span class="text font-bold">Multiple layouts</span>
-                    <p class="text-gray-600">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem</p>
+                    <p class="text-gray-600 text-center">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem</p>
                 </div>
 
                 <div class="flex flex-col items-center gap-2">
                     <img src="img/Base feature icon (4).png" alt="">
                     <span class="text font-bold">Better components</span>
-                    <p class="text-gray-600">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem</p>
+                    <p class="text-gray-600 text-center">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem</p>
                 </div>
 
                 <div class="flex flex-col items-center gap-2">
                     <img src="img/Base feature icon (5).png" alt="">
                     <span class="text font-bold">Well organised</span>
-                    <p class="text-gray-600">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem </p>
+                    <p class="text-gray-600 text-center">Lorem ipsum do adipisicing  In similique itaque ad <br> aliquam consequuntur sit autem </p>
                 </div>
             </div>
         </section>
-
-        <section class="bg-blue-300 py-5 gap-5">
+        
+        <!-- bloc bleu claire -->
+        <section class="bg-blue-300 py-5">
             <div>
                 <p class="font-bold text-4xl px-[10%] py-2">Real Stories from Real <br> Customers</p>
                 <span class="px-[10%]">Get inspired by these stories.</span>
             </div>
             
-            <div class="ml-[22%]">
-                <div class=" flex flex-col px-6 py-5 bg-white w-[20%] h-34 justify-between"> 
-                    <img src="img/_Client logo (1).png" alt="" class="w-[100px] py-2">
-                    <p class="py-4">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. <br> Reprehenderit </p>
-                    
-                    <p class="font-bold">Floyd Miles</p>
-                    <p class="text-gray-600">Vice president, GoPro</p>
-                </div>
-            </div>
-            
-            <!-- <div class="flex justify-between py-5  ">
-                <div class="flex flex-col">
-                    <div class="flex flex-col px-6 py-5 bg-white w-[45%] h-34"> 
-                        <img src="img/_Client logo (1).png" alt="" class="w-[100px] py-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. <br> Reprehenderit </p>
-                        
-                        <p class="font-bold">Floyd Miles</p>
-                        <p class="text-gray-600">Vice president, GoPro</p>
+            <div class="lg:flex-row lg:ml-[30%] lg:gap-6 lg:px-0
+                        flex flex-col gap-6 px-12">
+                <div class="flex flex-col px-6 py-5 gap-4 bg-white lg:w-[30%] lg:h-[250px] mt-[9%]"> 
+                    <img src="img/_Client logo (1).png" alt="" class="w-[100px]">
+                    <p><span class="text-3xl">“</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit </p>
+                    <h2 class="font-bold">Floyd Miles</h2>
+                    <span class="text-gray-600">Vice president, GoPro</span>
+                </div>           
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col px-6 py-5 bg-white lg:w-[60%]"> 
+                        <img src="img/_Client logo (1).png" alt="" class="w-[100px]">
+                        <p><span class="text-3xl">“</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit </p>
+                        <h2 class="font-bold">Floyd Miles</h2>
+                        <span class="text-gray-600">Vice president, GoPro</span>
+                    </div>           
+                    <div class="flex flex-col px-6 py-5 bg-white lg:w-[40%]"> 
+                        <img src="img/_Client logo (1).png" alt="" class="w-[100px]">
+                        <p><span class="text-3xl">“</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit </p>
+                        <h2 class="font-bold">Floyd Miles</h2>
+                        <span class="text-gray-600">Vice president, GoPro</span>
                     </div>
-                </div>
-
-               <div class=" flex">
-                    <div class="flex flex-col px-6 py-5 bg-white w-[30%] "> 
-                        <img src="img/_Client logo (1).png" alt="" class="w-[100px] py-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. <br> Reprehenderit </p>
-                        
-                        <p class="font-bold">Floyd Miles</p>
-                        <p class="text-gray-600">Vice president, GoPro</p>
-                    </div>
-               </div>
-           </div> -->
-            
+                </div>           
+           </div>
         </section>
+        
         <!-- bloc archives -->
-
-        <div class="px-24 flex justify-between py-10">
+        <div class="px-24 flex  flex-col py-10 
+                    lg:px-24 lg:flex-row lg:justify-between lg:py-10
+                    md:px-24 md:flex md:justify-between md:py-10 ">
             <div class="flex flex-col py-5">
                 <span class="font-bold text-4xl">Our 18 years of <br> archivements</span>
                 <p>whith our super powers we have reached this </p>
             </div>
 
-            <div class="flex flex-col py-5">
+            <div class="flex flex-col py-5 md:grid md:grid-cols-2
+                        lg:flex lg:flex-col lg:py-5
+                        md:flex md:flex-col md:py-5 ">
 
-                <div class="flex justify-between items-center gap-2">
+                <div class="flex flex-col gap-2
+                                lg:flex-row lg:justify-between lg:items-center lg:gap-2
+                                md:flex md:justify-between md:gap-2">
+
                     <img src="img/Base feature icon.png" alt="" class="w-[24px]">
                     <div class="flex flex-col">
                         <span class="font-bold text-3xl">10,000</span>
@@ -197,7 +199,10 @@
                 
               
                     <div class="flex flex-col">
-                        <div class="flex justify-between items-center gap-2">
+                        <div class="flex flex-col  gap-2
+                                        lg:flex-row lg:justify-between lg:items-center lg:gap-2
+                                        md:flex md:justify-between  md:gap-2
+                                                                                ">
                             <img src="img/Base feature icon (3).png" alt="" class="w-[24px]">
                             <div class="flex flex-col">
                                 <span class="font-bold text-3xl">2 Milion</span>
@@ -208,51 +213,61 @@
                 </div>
 
                
-                <div class="flex-col flex">
-                    <div class="flex gap-24">
-                        <div class="flex justify-between items-center gap-2">
-                            <img src="img/Base feature icon (4).png" alt="" class="w-[24px]">
-                            <div class="flex flex-col">
-                                <span class="font-bold text-3xl">500+</span>
-                                <span>Clients</span>
-                            </div>
-                        </div>
-                                
+                <div class="flex flex-col gap-2 
+                            lg:flex-row lg:justify-between lg:items-center lg:gap-2
+                            md:flex md:justify-between  md:gap-2">
+                            
+                    <div class="flex flex-col  gap-2
+                                    lg:flex-row lg:justify-between lg:items-center lg:gap-2
+                                    md:flex md:justify-between md:gap-2 
+                                                                            ">
+                        <img src="img/Base feature icon (4).png" alt="" class="w-[24px]">
                         <div class="flex flex-col">
-                            <div class="flex justify-between items-center gap-2">
-                                <img src="img/Base feature icon (5).png" alt="" class="w-[24px]">
-                                <div class="flex flex-col">
-                                    <span class="font-bold text-3xl">140</span>
-                                    <span>contries</span>
-                                 </div>
+                            <span class="font-bold text-3xl">500+</span>
+                            <span>Clients</span>
+                        </div>
+                    </div>
+                            
+                    <div class="flex flex-col">
+                        <div class="flex flex-col  gap-2
+                                        lg:flex-row lg:justify-between lg:items-center lg:gap-2
+                                        md:flex md:justify-between md:gap-2 
+                                                                                ">
+                            <img src="img/Base feature icon (5).png" alt="" class="w-[24px]">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-3xl">140</span>
+                                <span>contries</span>
+                                </div>
+                          
                             </div>
                         </div>
-                     </div>
+                    </div>   
                 </div>
-                
             </div>
 
         </div>
         <!--bloc integrations -->
 
-        <div class="flex justify-between px-24 py-24">
+        <div class="flex flex-col px-24 py-24 gap-5
+                    lg:flex-row lg:justify-between lg:px-24 lg:py-24 lg-gap-0 
+                    md:flex-row md:justify-between md:px-24 md:py-24">
             <div class="flex flex-col">
                 <span class="font-bold text-4xl py-3">Easy integrations <br> with 170+ tools</span>
                 <p>connect Landify whit your favourite tools that you that you use <br> daily and keep things on track. </p>
             </div>
 
-            <div class="bordure bg-gray-400 flex flex-col items-center">
+            <div class="bordure bg-gray-400 flex flex-col items-center md:w-[370px]">
                 <div class="flex">
-                    <img src="img/_Client logo mark (2).png" alt="">
-                    <img src="img/_Client logo mark (1).png" alt="" >
-                    <img src="img/_Client logo mark (3).png" alt="" >
-                    <img src="img/_Client logo mark (4).png" alt="" >
+                    <img src="img/_Client logo mark (2).png" alt="" class="w-[64px] lg:w-full md:w-[62px]">
+                    <img src="img/_Client logo mark (1).png" alt="" class="w-[64px] lg:w-full md:w-[62px]" >
+                    <img src="img/_Client logo mark (3).png" alt="" class="w-[64px] lg:w-full md:w-[62px]" >
+                    <img src="img/_Client logo mark (4).png" alt="" class="w-[64px] lg:w-full  md:w-[62px]" >
                 </div>
 
                 <div class="flex">
-                    <img src="img/_Client logo mark (5).png" alt="">
-                    <img src="img/_Client logo mark (6).png" alt="">
-                    <img src="img/_Client logo mark (6).png" alt="" >
+                    <img src="img/_Client logo mark (5).png" alt="" class="w-[64px] lg:w-full md:w-[62px]">
+                    <img src="img/_Client logo mark (6).png" alt="" class="w-[64px] lg:w-full md:w-[62px]">
+                    <img src="img/_Client logo mark (6).png" alt="" class="w-[64px] lg:w-full md:w-[62px]" >
                 </div>
 
             </div>
@@ -260,12 +275,15 @@
         </div>
         <!--le bloc avant le footer -->
         
-        <div class="flex justify-between px-24 py-24 relative bg-[#3dcde0]">
-            <div class="flex flex-col">
+        <div class="flex flex-col justify-between px-24 py-24  bg-[#3dcde0]
+                    lg:flex lg:justify-between lg:px-24 lg:py-24 lg:relative lg:bg-[#3dcde0]
+                    md:flex-row  md:justify-between md:px-24 md:py-24 md:relative md:bg-[#3dcde0] ">
+                    
+            <div class="flex flex-col md:flex flex-col">
                 <span class="font-bold text-4xl py-3">Manage all projects from <br> your mobile</span>
                 <p>Download the app to manage your projects, keep track of the <br> progress and complete tasks without procastinating. Stay on track <br>and complete on time!</p>
 
-                <div class="flex gap-3  py-10 flex-col ">
+                <div class="flex gap-3  py-10 flex-col">
                     <span>Get the App</span>
                     <div class="flex gap-3">
                         <button class="bg-black px-4 py-1 flex justify-between rounded-lg">
@@ -287,12 +305,14 @@
                 </div>
             </div>
 
-            <img src="img/Phone Mockup 1.png" alt="" class="absolute top-0 right-[30%] ">
-            <img src="img/Phone Mockup 2.png" alt="" class="absolute bottom-0 right-[10%]">
+            <img src="img/Phone Mockup 1.png" alt="" class="lg:absolute top-20 right-[28%] md:absolute top-[35px] right-[30%] md:flex flex-col ">
+            <img src="img/Phone Mockup 2.png" alt="" class="lg:absolute bottom-0 right-[10%] md:absolute bottom-0 right-[2%] md:flex flex-col ">
         </div>
     </main>
 
-    <footer class="bg-black flex justify-between px-24">
+    <footer class="bg-black flex flex-col justify-between px-4
+                lg:bg-black lg:flex-row lg:justify-between lg:px-24 
+                md:bg-black md:flex-row md:justify-between md:px-24">
        
 
         <div class="flex flex-col">
@@ -319,7 +339,7 @@
 
         <div class="flex gap-3 py-10 flex-col">
             <span class="text-white">Get the App</span>
-            <div class="flex gap-3 flex-col">
+            <div class="flex gap-3 flex-col w-[130px]">
                 <button class="bg-black px-4 py-1 flex justify-between rounded-lg border border">
                     <img src="img/game.png" alt="" class="w-[20px] py-2">
                     <div class="flex flex-col">
