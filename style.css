@@ -1,6 +1,6 @@
 .bordure{
-    border-radius: 0px 0px 740px 750px ;
-    background-color: #f51818;
+    border-radius: 0px 0px 760px 760px ;
+    /* background-color: #e0ebeb; */
 }
 
 .bg{
@@ -8,3 +8,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.im{
+    background-color: #069999;
+}
+
+.real{
+    background-color: rgb(196, 245, 245);
+}
+
